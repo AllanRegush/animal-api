@@ -12,10 +12,10 @@ import (
 var data [256]Animal
 
 type Animal struct {
-	Id   int    `json: "id"`
-	Kind string `json: "type"`
-	Name string `json: "name"`
-	Age  int    `json: "age"`
+	Id   int    `json:"id"`
+	Kind string `json:"type"`
+	Name string `json:"name"`
+	Age  int    `json:"age"`
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
